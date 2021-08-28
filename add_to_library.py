@@ -28,7 +28,7 @@ def main():
         success = []
         for album in album_reader:
             print(album)
-            if search_and_add(yt, album, playlistId, dryRun):
+            if search_and_add(yt, album, playlistId, args.dry_run):
                 success.append(album)
             else:
                 errors.append(album)
